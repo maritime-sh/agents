@@ -45,7 +45,7 @@ def gallery(agents: list[dict]) -> str:
     shown = [a for a in agents if (ROOT / a["slug"] / "demo.gif").exists()]
     cells = []
     for a in shown:
-        width = 180 if a["computer"] == "android" else 380
+        width = 130 if a["computer"] == "android" else 260
         cells.append(
             f'<td align="center" valign="top" width="33%"><a href="{a["slug"]}/"><img src="{a["slug"]}/demo.gif" '
             f'width="{width}" alt="{a["name"]} on a Maritime computer"></a><br><b>{a["name"]}</b><br>'
