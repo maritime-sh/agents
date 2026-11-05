@@ -1,0 +1,40 @@
+name: New agent
+description: Suggest an open-source agent to run on Maritime computers
+labels: ["new agent"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Upstream repository
+      placeholder: https://github.com/owner/agent
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License
+      placeholder: MIT, Apache-2.0, ...
+    validations:
+      required: true
+  - type: dropdown
+    id: computer
+    attributes:
+      label: Which computer does it need?
+      options:
+        - Linux desktop
+        - Windows desktop
+        - Android phone
+        - Agent box (no screen)
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What would people use it for?
+  - type: checkboxes
+    id: build
+    attributes:
+      label: Contribution
+      options:
+        - label: I would like to build the folder myself

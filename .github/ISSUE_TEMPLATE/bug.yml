@@ -1,0 +1,26 @@
+name: Bug report
+description: Something in a folder does not work
+labels: ["bug"]
+body:
+  - type: input
+    id: folder
+    attributes:
+      label: Folder
+      placeholder: browser-use
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command you ran
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: What happened
+      description: The output, with any keys removed.
+      render: text
+    validations:
+      required: true

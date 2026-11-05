@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Maritime docs
+    url: https://maritime.sh/docs
+    about: How Maritime computers, agent boxes and the API work
+  - name: Discord
+    url: https://discord.gg/wvPAvXNZqm
+    about: Questions and ideas
